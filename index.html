@@ -68,6 +68,18 @@ footer{border-top:1px solid #e2e0f1;color:#77768d;font-size:13px;padding:26px 0;
 :focus-visible{outline:3px solid var(--coral);outline-offset:4px}
 @media(max-width:790px){.cards{grid-template-columns:1fr}.card{min-height:0}header{padding-bottom:64px}.hero{padding-top:55px}h1{font-size:clamp(40px,10vw,66px)}.card{padding:24px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card a{transition:none}}
+.sim-picker{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin:0 0 34px}
+.sim-choice{display:flex;align-items:center;gap:14px;padding:18px 20px;background:#fff;border:2px solid #dcd5ff;border-radius:18px;text-decoration:none;box-shadow:0 5px 0 #dfd8ff;transition:transform .12s,box-shadow .12s}
+.sim-choice:hover{transform:translateY(-2px);box-shadow:0 7px 0 #ded8ff}
+.choice-strategos{border-color:#ade8da;box-shadow:0 5px 0 #ceefe8}
+.choice-strategos:hover{box-shadow:0 7px 0 #cdeee6}
+.choice-emoji{font-size:31px;flex-shrink:0}
+.sim-choice strong{display:block;color:#312669;font-size:19px;line-height:1.3}
+.sim-choice small{display:block;color:#6f7186;font-size:12px;margin-top:3px}
+.choice-arrow{margin-left:auto;font-size:25px;color:#6251dd;font-weight:900}
+.choice-strategos .choice-arrow{color:#149d8c}
+.simulation-group{scroll-margin-top:20px}
+@media(max-width:790px){.sim-picker{grid-template-columns:1fr}.sim-choice{padding:15px}.sim-choice strong{font-size:17px}}
 </style>
 </head>
 <body>
@@ -84,6 +96,10 @@ footer{border-top:1px solid #e2e0f1;color:#77768d;font-size:13px;padding:26px 0;
 </header>
 <main class="wrap">
 <div class="intro"><h2>Elige tu simulación</h2><p>Dos simulaciones empresariales, cada una con su portal de estudiantes, panel del profesor y manual ilustrado.</p></div>
+<nav class="sim-picker" aria-label="Selecciona simulación">
+<a class="sim-choice choice-circular" href="#cbc-title"><span class="choice-emoji" aria-hidden="true">♻️</span><span><strong>Circular Business Challenge 2</strong><small>Simulación de economía circular · Ver 3 accesos</small></span><span class="choice-arrow" aria-hidden="true">↓</span></a>
+<a class="sim-choice choice-strategos" href="#strategos-title"><span class="choice-emoji" aria-hidden="true">✦</span><span><strong>STRATEGOS IA</strong><small>Simulación estratégica · Ver 3 accesos</small></span><span class="choice-arrow" aria-hidden="true">↓</span></a>
+</nav>
 <section class="simulation-group" aria-labelledby="cbc-title">
 <div class="simulation-head"><h2 id="cbc-title">♻️ Circular Business Challenge 2</h2><span class="label">Construcción sostenible · Economía circular</span></div>
 <div class="cards">
