@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#302578">
 <meta name="description" content="ProfePedro · Simulaciones, recursos docentes y aprendizaje activo de estrategia empresarial y economía circular.">
 <meta property="og:title" content="ProfePedro · Simulaciones y recursos docentes">
-<meta property="og:description" content="Aprende, decide y compite. Accede a Circular Business Challenge 2, al espacio docente y al manual de juego.">
+<meta property="og:description" content="Aprende, decide y compite. Accede a Circular Business Challenge 2 y STRATEGOS IA, sus paneles docentes y sus manuales.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.profepedro.online/">
 <title>ProfePedro | Simulaciones y recursos docentes</title>
@@ -48,6 +48,19 @@ main{margin-top:-41px;position:relative;padding-bottom:75px}
 .card a:hover{transform:translateY(-3px)}
 .card:nth-child(2) a{background:#168d85;box-shadow:0 4px 0 #0c6b66}
 .card:nth-child(3) a{background:#d68d26;box-shadow:0 4px 0 #aa6c1e}
+.simulation-group{margin:12px 0 39px}
+.simulation-head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin:0 0 17px}
+.simulation-head h2{font-size:clamp(23px,3vw,31px);color:#2c256c;line-height:1.2;margin:0;letter-spacing:-.04em}
+.simulation-head .label{font-size:12px;font-weight:800;background:#eae7ff;color:#4b3bb8;padding:7px 12px;border-radius:100px}
+.simulation-group.strategos .simulation-head .label{background:#dff9f3;color:#116e65}
+.simulation-group.strategos .card:nth-child(1){border-top-color:#2cbcae}
+.simulation-group.strategos .card:nth-child(2){border-top-color:#ff795d}
+.simulation-group.strategos .card:nth-child(3){border-top-color:#ffce60}
+.simulation-group.strategos .card:nth-child(1) a{background:#168d85;box-shadow:0 4px 0 #0c6b66}
+.simulation-group.strategos .card:nth-child(2) a{background:#db6c55;box-shadow:0 4px 0 #a94c39}
+.simulation-group.strategos .card:nth-child(3) a{background:#d68d26;box-shadow:0 4px 0 #aa6c1e}
+.simulation-group.strategos .card:nth-child(1) .symbol{background:#dff9f3}
+.simulation-group.strategos .card:nth-child(2) .symbol{background:#fff0e9}
 .note{background:#f0eeff;border:1px solid #d9d2ff;padding:20px 24px;border-radius:18px;margin-top:35px;color:#4d4683;display:flex;gap:15px;align-items:flex-start}
 .note .symbol-small{font-size:27px}
 .note p{margin:0}
@@ -70,12 +83,23 @@ footer{border-top:1px solid #e2e0f1;color:#77768d;font-size:13px;padding:26px 0;
 </div>
 </header>
 <main class="wrap">
-<div class="intro"><h2>Elige por dónde empezar</h2><p>Accede al juego, gestiona la experiencia como docente o consulta las instrucciones antes de participar.</p></div>
+<div class="intro"><h2>Elige tu simulación</h2><p>Dos simulaciones empresariales, cada una con su portal de estudiantes, panel del profesor y manual ilustrado.</p></div>
+<section class="simulation-group" aria-labelledby="cbc-title">
+<div class="simulation-head"><h2 id="cbc-title">♻️ Circular Business Challenge 2</h2><span class="label">Construcción sostenible · Economía circular</span></div>
 <div class="cards">
-<article class="card"><div class="symbol" aria-hidden="true">🎮</div><h3>Jugar a Circular Business Challenge 2</h3><p>Entra con el código de tu equipo, diseña tu empresa circular y compite a lo largo de cuatro rondas.</p><a href="https://pericoff.github.io/circular-business-uja-2/">Acceder al simulador</a></article>
-<article class="card"><div class="symbol" aria-hidden="true">🎛️</div><h3>Panel del profesor</h3><p>Gestiona equipos, abre y cierra rondas, selecciona eventos y evalúa los modelos de negocio.</p><a href="https://pericoff.github.io/circular-business-uja-2/profesor.html">Abrir panel docente</a></article>
-<article class="card"><div class="symbol" aria-hidden="true">📖</div><h3>Manual ilustrado del alumnado</h3><p>Consulta las reglas, las siete decisiones, la rúbrica del Canvas y la evaluación final 80/20.</p><a href="https://pericoff.github.io/circular-business-uja-2/guia-alumnado.html">Leer el manual</a></article>
+<article class="card"><div class="symbol" aria-hidden="true">🎮</div><h3>Alumnado</h3><p>Entra con el código de tu equipo, desarrolla tu empresa circular y compite durante cuatro rondas.</p><a href="https://pericoff.github.io/circular-business-uja-2/">Entrar en la simulación</a></article>
+<article class="card"><div class="symbol" aria-hidden="true">🎛️</div><h3>Profesor</h3><p>Gestiona participantes, eventos, rondas, resultados y evaluación del Canvas.</p><a href="https://pericoff.github.io/circular-business-uja-2/profesor.html">Abrir panel docente</a></article>
+<article class="card"><div class="symbol" aria-hidden="true">📖</div><h3>Manual ilustrado</h3><p>Consulta las reglas, las decisiones empresariales y la valoración final 80/20.</p><a href="https://pericoff.github.io/circular-business-uja-2/guia-alumnado.html">Leer el manual</a></article>
 </div>
+</section>
+<section class="simulation-group strategos" aria-labelledby="strategos-title">
+<div class="simulation-head"><h2 id="strategos-title">✦ STRATEGOS IA</h2><span class="label">Simulación estratégica independiente</span></div>
+<div class="cards">
+<article class="card"><div class="symbol" aria-hidden="true">🚀</div><h3>Alumnado</h3><p>Accede a la nueva simulación de estrategia empresarial y participa con tu propio equipo.</p><a href="https://pericoff.github.io/STRATEGOS-IA/">Entrar en STRATEGOS IA</a></article>
+<article class="card"><div class="symbol" aria-hidden="true">🧠</div><h3>Profesor</h3><p>Administra la partida independiente, configura los eventos y evalúa las propuestas.</p><a href="https://pericoff.github.io/STRATEGOS-IA/profesor.html">Abrir panel docente</a></article>
+<article class="card"><div class="symbol" aria-hidden="true">📚</div><h3>Manual ilustrado</h3><p>Descubre el funcionamiento de STRATEGOS IA, su Canvas y las cuatro rondas.</p><a href="https://pericoff.github.io/STRATEGOS-IA/guia-alumnado.html">Leer el manual</a></article>
+</div>
+</section>
 <div class="note"><div class="symbol-small" aria-hidden="true">💡</div><p><strong>Antes de jugar:</strong> revisa el manual y solicita al profesor el código de acceso de tu equipo. Las decisiones y los resultados se gestionan en el simulador, no en esta portada.</p></div>
 </main>
 <footer><div class="wrap">ProfePedro · Simulaciones y recursos docentes · <span id="year">2026</span></div></footer>
